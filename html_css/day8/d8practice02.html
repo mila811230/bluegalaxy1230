@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        #first:checked ~ div#tab_tab>label[for="first"]{
+            background-color: rgb(193, 85, 255);color: rgb(15, 247, 169);}
+        #second:checked ~ div#tab_tab>label[for="second"]{
+            background-color: rgb(15, 247, 169); color: rgb(193, 85, 255);}
+        #tab_apple{display: none;}
+        #first:checked ~ #tab_apple{display: block;}
+        #tab_tiger{display: none;}
+        #second:checked ~ #tab_tiger{display: block;}
+
+        
+    </style>
+</head>
+<body>
+    <input type="radio" id="first" name="fruits" checked="checked">
+    <input type="radio" id="second" name="fruits">
+    <div id="tab_tab">
+        <label for="first">과일</label>
+        <label for="second">동물</label>
+    </div>
+    <div id="tab_apple">
+        <ul>
+            <li>사과</li>
+            <li>오렌지</li>
+            <li>체리</li>
+        </ul>
+    </div>
+    <div id="tab_tiger">
+        <ul>
+            <li>호랑이</li>
+            <li>사자</li>
+            <li>고양이</li>
+        </ul>
+    </div>
+</body>
+</html>

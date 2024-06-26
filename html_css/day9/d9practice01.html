@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 기본설정들 -->
+    <style>
+        *{margin: 0; padding:0;}
+        body{font-family: Helvetica, sans-serif; min-width: 720px;}
+         li{list-style: none;} /*리스트앞에 동그라미나 숫자 없애기 */
+        a{text-decoration: none;}
+    </style>
+<!-- 보기쉽게 먼저 -->
+ <style>
+    /* header{background-color: rgb(0, 0, 0); color: white;}
+    nav{background-color: rgb(209, 159, 255); color:}
+    #wrap{background-color: rgb(114, 255, 208);}
+    footer{background-color: rgb(78, 21, 21);color: 
+        rgba(255, 255, 255, 0.425);} */
+ </style>
+
+ <!-- 헤더 -->
+  <style>
+    #main_header{height: 50px; 
+        line-height: 50px;
+        padding-left: 20px;
+        border-bottom: 1px solid rgb(75, 37, 37);
+        background-color: black; color: white;}
+  </style>
+
+ <!-- 첫번째네비게이션 -->
+  <style>
+    #main_gnb{
+        overflow: hidden;
+        background-color: rgb(123, 157, 189);
+        border-bottom: 1px solid rgb(0, 0, 0);}
+
+    #main_gnb>ul.left{
+        overflow: hidden;
+        float: left;
+    }
+    #main_gnb>ul.left>li{
+        float: left;
+    }
+    #main_gnb>ul.right{
+        overflow: hidden;
+        float: right;
+    }
+    #main_gnb>ul.right>li{
+        float: right;
+    }
+    #main_gnb a{
+        display: block;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-right: 1px solid rgb(85, 83, 83);
+        border-left: 1px solid rgb(149, 178, 202);
+        color: white;
+    }
+  </style>
+<!-- 컨텐츠 -->
+   <style>
+   #wrap{overflow: hidden;
+        background-color: rgb(117, 161, 189);
+        border-bottom: 3px solid black;}
+   #wrap>#main_lnb{
+        float: left;
+        width: 200px;
+    }
+    #wrap>#main_lnb>ul>li{
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #6298b2;
+        border-top: 1px solid #96d6f6;
+        }
+   #wrap>#content_wrap{
+        width: 100%;
+        float: left;
+        background-color: bisque;
+        margin-right:-200px ;
+        padding-left: ;
+    }
+    #content{padding: 10px; background-color: white;}
+    article{padding: 10px;}
+
+    #footer{text-align: center;
+        padding: 20px;}
+
+   </style>
+
+</head>
+<body>
+    <header id="main_header">
+        <h1>Fuid</h1>
+    </header>
+    <nav id="main_gnb">
+       <ul class="left">
+            <li><a href="#">Btn_L</a></li>
+            <li><a href="#">Btn_L</a></li>
+            <li><a href="#">Btn_L</a></li>
+            <li><a href="#">Btn_L</a></li>
+            <li><a href="#">Btn_L</a></li>
+            <li><a href="#">Btn_L</a></li>
+       </ul>
+       <ul class="right">
+            <li><a href="#">Btn_R</a></li>
+            <li><a href="#">Btn_R</a></li>
+       </ul>
+    </nav>
+    <div id="wrap">
+        <nav id="main_lnb">
+            <ul>
+                <li><a href="#">button</a></li>
+                <li><a href="#">button</a></li>
+                <li><a href="#">button</a></li>
+                <li><a href="#">button</a></li>
+                <li><a href="#">button</a></li>
+            </ul>
+        </nav>
+        <div id="content_wrap">
+            <div id="content">
+                <article>
+                    <h1>제목</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus consequatur, accusamus officia nulla deleniti autem ratione excepturi molestiae natus nemo dolores iusto amet facilis corporis deserunt adipisci. Quam, temporibus quibusdam.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam iusto distinctio sint voluptatem corrupti laborum beatae quidem voluptatum repudiandae labore blanditiis id neque magnam eos eius, temporibus libero in. Dolore!</p>
+                </article>
+                <article>
+                    <h1>제목</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus consequatur, accusamus officia nulla deleniti autem ratione excepturi molestiae natus nemo dolores iusto amet facilis corporis deserunt adipisci. Quam, temporibus quibusdam.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam iusto distinctio sint voluptatem corrupti laborum beatae quidem voluptatum repudiandae labore blanditiis id neque magnam eos eius, temporibus libero in. Dolore!</p>
+                </article>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <h3>연세IT미래 연세 교육원</h3>
+        <address>수원시 장안구 영화동</address>
+    </footer>
+</body>
+</html>

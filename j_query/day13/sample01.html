@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-family: 'd2coding';
+            white-space: pre; /* 연속된 공백과 줄바꿈을 그대로 표시 */
+        }
+    </style>
+    <script>
+        function log(...texts){
+            const logDiv = document.getElementById('log');
+            const newLogEntry = document.createElement('div');
+            // 여러 텍스트 인자를 하나의 문자열로 합칩니다.
+            newLogEntry.textContent = texts.join(' ');
+            logDiv.appendChild(newLogEntry);
+        }
+    </script>
+</head>
+<body>
+    <div id="log"></div>
+    <script>
+        // // 조건문-------------------------------------------------------------------
+        // for (let i = 1; i < 3; i++){
+        //     log(i);
+        // }
+        // log('종료');
+
+        // let sum = 0;
+        // for(let i = 1; i <= 10; i++){
+        //     sum += i;  //sum += i; :증감연산 변수 sum의 값을 가져와 i를 더한후  다시 변수 sum의 값으로 설정한다.
+        // }
+        // log(sum);
+
+        // let money = 1000000;
+        // for(let i = 1; i <= 12; i++){
+        //     log(money);
+        //     money *= 1.01;  // money *= 1.01; :증감연산 변수 money의 값을 가져와 1.01을 곱한후 다시 변수 money의 값으로 설정한다.
+        // }
+        // log(money);
+
+        // for(let i = 2; i <= 9; i++){
+        //     log("2*", i, "=", 2*i);
+        // }      //구구단 2단
+
+        // for(let dan = 2; dan <= 4; dan++){
+        //     for(let n = 2; n <=9; n++){
+        //         log(dan, "*", n, "=", dan*n);
+        //     } //구구단 2단부터 4단까지 반복문은 순서가 중요함!
+        // }
+
+        // for(let line = 0; line <= 5; line++){
+        //     let strStar = ""; //증감연산때문에 값을 초기화하기 위함
+        //     for(let star = 0; star <= line; star++){
+        //         strStar += "*";
+        //     }
+        //     log(strStar);
+        // }
+
+        // let strStar = "";
+        // for(let line = 0; line < 5; line++){
+        //         strStar += "*"; 
+        //         log(strStar);
+        //     }
+
+        // for(let line = 0; line < 5; line++){
+        //     let strStar = "";
+        //     for(star = 5; star > line; star--){
+        //         strStar += "*";
+        //     }
+        //     log(strStar);
+        // }
+
+        // for(let line = 0; line < 5; line++){
+        //     let strStar = "";
+        //     for(let star = 5; star > line; star--){
+        //         star += "*";   // 변수 star의 값을 가져와 *을 더한후 다시 변수 star의 값으로 설정한다.
+        //     }
+        //     log(strStar);
+        // }
+
+
+        // for(let line = 0; line < 5; line++){
+        //     let strStar = ""; 
+        //     for(blank = 4; blank > line; blank--){
+        //         strStar += " ";
+        //     }
+        //     for(let star = 0; star <= line; star++){
+        //         strStar += "*";
+        //     }
+        //     log(strStar);
+        // }
+
+
+        // let num = 1;
+        // let sum = 0;
+        // while(num <=10){   //증감연산의 조건
+        //     sum += num;  // 변수 sum의 값을 가져와 num을 더한후 변수 sum의 값으로 설정한다.
+        //     num++;
+        // }
+        // log(sum);
+
+        // let money = 1000000;
+        // let month = 1
+        // while(month <= 12){
+        //     log(money);
+        //     money *= 1.01;
+        //     month++;
+        // }
+        // log(money);
+
+        // for(let i = 2; i <= 10; i +=2){
+        //     log(i);
+        // }
+
+        // for(let i = 1; i <= 10; i++){
+        //     if(i%2 ==1){
+        //         continue;
+        //     }
+        //     log(i);
+        // }
+
+        // for(let i = 1; i <=10; i++){
+        //     if(i%3 == 0){
+        //         continue;
+        //     }
+        //     log(i);
+        // }
+
+        // for(let i = 1; i <=10; i++){
+        //     if(i%3 != 0){
+        //         log(i);
+        //     }
+        //     }
+
+        // for(let dan = 2; dan <= 9; dan++){
+        //     for(let n = 2; n <= 9; n++){
+        //         log(dan, "*", n, "=", dan*n);     
+        //     }
+        // }
+        
+        // let dan = 2;
+        // for(let n = 2; n <= 9 && dan <= 9; n++){
+        //     log(dan, "*", n, "=", dan*n)
+        //     if(n >= 9){
+        //         dan++;
+        //         n = 2;
+        //     }
+        // }
+
+        // for(let i = 0; i < 81; i++){
+        //     let dan = parseInt(i/9) + 1;
+        //     let n = i%9 + 1;
+        //     log(dan, "*", n, "=", dan*n);
+        // }
+
+        
+        // n001 = parseInt(num /1) % 10;
+        // n010 = parseInt(num / 10) % 10;
+        // n100 = parseInt(num / 100) % 10;
+
+    //    let num = 4123;
+    //    let i = 0;
+    //    numTempo = num;
+    //    sum = num % 10;
+    //    while(i < 5){
+    //     let divNum = numTempo = parseInt(numTempo / 10);
+    //     sum += (divNum % 10);
+    // if(divNum < 10){
+    //     break;
+    //         }
+    //         i++; 
+    //   }
+    //   log(sum);
+
+     //    let num = 4123;
+    //    let i = 0;
+    //    numTempo = num;
+    //    sum = num % 10;
+    //    while(true){
+    //     let divNum = numTempo = parseInt(numTempo / 10);
+    //     sum += (divNum % 10);
+    // if(divNum < 10){
+    //     break;
+    //         }
+    //         i++; 
+    //   }
+    //   log(sum);
+
+    // let i = 1234;
+    // num = i * 10;
+    // let count = 0;
+    // while(true){
+    //     num = parseInt(num / 10);
+    //     if ((num % 10) %3 == 0){
+    //         count++;
+    //     }
+    //     if(num < 10){
+    //         break;
+    //     }
+    // }
+    // log(count);
+
+//   철수 영희 만수 숙희 네명이서 3, 6, 9 게임할때
+//   3, 6, 9 가 들어갈때만 박수를 친다면 1234번째 박수는
+//   누가 될것인가 의 코드  ---------------------------
+
+//     let total_clap = 0;
+//         let stop = 1234;
+//         for(let i = 1; i<2000; i++){
+//             num = i * 10;
+//             let count = 0;
+//             while(true){
+//                 num = parseInt(num / 10);
+//                 if((num % 10)==3 || (num % 10)==6 || (num % 10)==9 ){count++;}
+//                 if(num<10){
+//                     break;
+//                 }
+//             }
+//             total_clap += count;
+//             log(i,"번째", i%4 ,"번 선수가 박수:", count ,"누적박수:",total_clap);
+//             if(total_clap >= stop){
+//                 log(i%4,"번 선수가", stop,"번째 박수를 쳤습니다.");
+//                 break;
+//             }
+//         }
+//  ---------------------------------------------------
+    </script>
+</body>
+</html>

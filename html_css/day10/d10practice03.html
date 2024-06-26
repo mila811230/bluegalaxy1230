@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-template-rows: 100px 200px 100px;
+                gap:5px}
+
+        .item{font-weight: bolder;}
+        .header{grid-column: 1 / 4;
+                background-color: aquamarine;}
+        .sidebar{grid-row: 2 / 3;
+                background-color: yellowgreen;}
+        .content{grid-column: 2 / 4;
+                background-color: rgb(200, 141, 255);}
+        .footer{grid-column: 1 / 4;
+                grid-row: 3 / 4;
+                background-color: rgb(255, 140, 194);}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">헤더</div>
+        <div class="item sidebar">사이드바</div>
+        <div class="item content">컨텐츠</div>
+        <div class="item footer">마무리</div>
+    </div>
+    
+</body>
+</html>

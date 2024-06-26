@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0;}
+        body {font-size: 16px; color: blueviolet; line-height: 160%; background: #aaa;}
+        #wrap {margin: 50px auto; width: 1000px;}
+        #wrap #textBox {background: #c5ff79;}
+        #wrap #twxtBox .gap {padding: 50px;}
+        #wrap #textBox .gap h3 {font-size: 20px #b3b4ff; font-weight: normal;
+            text-align: center; color: #ff0000;}
+        #wrap #textBox .gap p {width: 100%; line-height: 160%; margin-bottom: 10px; padding: 0 10px;}
+        #wrap #textBox .gap p.text-wrap1 {text-transform: uppercase;}
+        #wrap #textBox .gap p.text-wrap2 {text-transform:lowercase;}
+        #wrap #textBox .gap p.text-wrap3 {text-transform:capitalize;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="textBox">
+            <div class="gap">
+                <div id="text-wrap">
+                    <h3>텍스트 영문 대소문자 변환 text-transform:uppercase;</h3>
+                    <p class="text-wrap1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aliquid dolor voluptate architecto quas quae praesentium natus nesciunt. Vero quo unde nam suscipit repudiandae in eos debitis, facilis accusantium quas!
+                    </p><br>
+
+                    <h3>텍스트 영문 소문자 변환 text-transform:lowercase;</h3>
+                    <p class="text-wrap2">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum aliquid dolorum nobis aliquam consequuntur quam nulla molestiae, adipisci nemo quae numquam, autem placeat iure velit omnis sint! Sunt, accusantium nobis.
+                    </p><br>
+
+                    <h3>텍스트 영문 단어 첫 글자 대문자 변환 text-transform:capitalize;</h3>
+                    <p class="text-wrap3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quis illo voluptatem perferendis laborum officiis velit corporis, iste ratione voluptatibus explicabo quisquam iure perspiciatis reprehenderit voluptatum necessitatibus reiciendis temporibus eum?
+                    </p><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

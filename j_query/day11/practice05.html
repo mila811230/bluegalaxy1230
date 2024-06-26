@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const my = 5;
+        // console.log(my);
+
+        // my = 7;   //const는 값을 재할당 할 수 없으며, 다시 선언 할 수 없음
+        // console.log(my);  //
+
+
+        // function logScope(){
+        //     let local = 2;
+        //     if(local){
+        //         let local = '다른값';
+        //         console.log('블럭안의 var:', local);
+        //                }
+        //     console.log('local',(local))
+        // }
+        // logScope();
+
+        //let 의 결과값: 작은괄호가 결국 영향을 주지 않아 console.log('local', local); 의 값은 '2'가 나옴
+
+
+        function logScope(){
+            var local = 2;
+            if(local){
+                var local = '다른값';
+                console.log('블럭안의 var:', local);
+            }
+        console.log('local', local);
+        }
+        logScope()
+
+        //var의 결과값: 작은괄호가 영향을 줘 colsole.log('local'), local); 의 값은 '다른값' 이 나옴
+    </script>
+</body>
+</html>

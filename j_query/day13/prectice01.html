@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            font-family: 'd2coding';
+            white-space: pre; /* 연속된 공백과 줄바꿈을 그대로 표시 */
+        }
+    </style>
+    <script>
+        function log(...texts){
+            const logDiv = document.getElementById('log');
+            const newLogEntry = document.createElement('div');
+            // 여러 텍스트 인자를 하나의 문자열로 합칩니다.
+            newLogEntry.textContent = texts.join(' ');
+            logDiv.appendChild(newLogEntry);
+        }
+    </script>
+</head>
+<body>
+    <div id="log"></div>
+    <script>
+
+        // for(let i = 1; i <= 10; i++){
+        //     log(i);
+        // }
+        // log('end');
+        
+        // let hap = 0;
+        // for(let i = 0; i <= 100; i++){
+        //     hap += i;
+        // }
+        // log('1에서 100까지 더한값은 :' + hap + '입니다')
+
+        // for(let i = 2; i <= 9; i++){
+        //     log(i + "단");
+        //     for(let n = 1; n <= 9; n++){
+        //         log(i, "*", n, "=", i*n);
+        //     }
+        // }
+
+        let num = 10;
+        while(num >= 0){
+            log(num);
+            num--;
+        }
+
+        let star = ""
+        for(let i = 1; i < 8; i++){
+            star += "*";
+            log(star);
+        }
+
+   for(let j = 0; j < 8; j++){
+            let star1 = ""
+            for(k = 8; k > j; k--){
+                star1 += "*";
+            }
+            log(star1);
+        }
+    // for(let line = 0; line < 5; line++){
+    //     let strStar = "";
+    //     for(star = 5; star > line; star--){
+    //         strStar += "*";
+    //     }
+    //     log(strStar);
+    // }
+
+   for(let bling = 0; bling < 8; bling++){
+            let bigStar = "";
+            for(spark = 0; spark < bling; spark++){
+            bigStar += "*";
+            }
+            log(bigStar);
+        }
+
+    // for(let line = 0; line <= 5; line++){
+    //     let strStar = ""; //증감연산때문에 값을 초기화하기 위함
+    //     for(let star = 0; star <= line; star++){
+    //         strStar += "*";
+    //     }
+    //     log(strStar);
+    // }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0 auto;}
+        body{font-family: sans-serif;}
+/* 헤더 네비게이션바*/
+        #header{position: relative; width: 960px; height: 160px; 
+            background-color: rgb(255, 223, 251); margin: 0 auto;}
+        #main_header{padding-left: 50px; padding-top: 40px;}
+        #header>#main_gnb{top: 0; right: 0; position: absolute;
+                        margin-top: 5px; margin-right: 5px;}
+        #header>#main_lnb{bottom: 0; right: 0; position: absolute;
+                        margin-bottom: 5px; margin-right: 5px;}
+
+        #main_gnb>ul{overflow: hidden; float: right;}
+        #main_gnb>ul>li{display: block; float: left; 
+            border: 1px solid black; padding: 3px 3px 3px 3px;
+            background-color: rgb(194, 255, 255);}
+        #main_gnb>ul>li:first-child{border-radius: 10px 0 0 10px;}
+        #main_gnb>ul>li:last-child{border-radius: 0px 10px 10px 0px;}
+
+        #main_lnb>ul{overflow: hidden;}
+        #main_lnb>ul>li{display: block; float: left;
+            border: 1px solid black; padding: 3px 3px 3px 3px;
+            background-color: rgb(238, 255, 143);}
+        #main_lnb>ul>li:first-child{border-radius: 10px 0 0 10px;}
+        #main_lnb>ul>li:last-child{border-radius: 0px 10px 10px 0px;}
+/* 메인 섹션*/
+        
+        #container{
+            margin: 0 auto; width: 960px; /*position: relative;*/
+            overflow: hidden;
+        }
+
+        #container>#main_section{width: 760px; margin: 0 auto;  float: left;
+            background-color: #e7c2ff; }
+        #container>#main_section>#main_article{border: 1px solid black;
+            padding: 10px; }
+        #container>#main_aside{width: 200px; float: right; background-color: #adfcff;}
+        #mai_article{margin: 0 auto ;border: 1px black;}
+
+        /* 메인어사이드 */
+
+        #first:checked ~ section#button>label[for='first']{
+            background-color: #9affb8;}
+        #second:checked ~ section>label[for='second']{
+            background-color: #9affb8; color: black;}
+
+        #aside_first{display: none;}
+        #first:checked ~ #aside_first{display: block;}
+        #aside_second{display: none}
+        #second:checked ~#aside_second{display: block;}
+
+        section#button{overflow: hidden;}
+        section#button>label{display: block; float: left;
+            box-sizing: border-box; border: 1px solid black;
+            background: #f3ff88; color: black; width: 100px;
+            height: 30px; line-height: 30px; text-align: center;}
+        input{display:none;}
+
+/* 푸터 */
+        #main_footer{
+            width: 960px; margin: 0 auto; margin-bottom: 10px; 
+            padding: 10px; text-align: center; box-sizing:border-box; 
+            background-color: #a2d2ff;}         
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="main_header">
+            <h1>Rint Development</h1>
+            <h2>HTML + CSS Basic</h2>
+        </div>
+        <div id="main_gnb">
+            <ul>
+                </a>Web</li>
+                <li>Mobile</li>
+                <li>Game</li>
+                <li>Simulation</li>
+                <li>Data</li>
+            </ul>
+        </div>
+        <div id="main_lnb">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>JQuery</li>
+                <li>Node.js</li>
+            </ul>
+        </div>
+    </div>
+    <div id="container">
+        <section id="main_section">
+            <article id="main_article">
+                <h1>Main Section</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates et quo fuga magni nihil rerum assumenda quia. Voluptates quod ex modi dolores quis cumque numquam obcaecati deserunt? Cupiditate, neque quisquam!</p>
+            </article>
+            <article id="main_article">
+                <h1>Main Section</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit incidunt officia iusto ratione eaque temporibus rerum, sed veniam illo necessitatibus ab tempora dolores itaque hic accusamus quisquam quis. Omnis, vel!</p>
+            </article>
+            <article id="main_article">
+                <h1>Main Section</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias odit sequi officiis enim amet. Aliquid quasi cupiditate, suscipit ea, officiis doloremque voluptate eos, laudantium earum sequi cum reprehenderit vero rem!</p>
+            </article>
+        </section>
+        <div id="main_aside">
+            <input type="radio" name="check_button" id="first" checked="checked">
+            <input type="radio" name="check_button" id="second">
+            <style>
+               
+            </style>
+          <section id="button">
+            <label for="first">하나</label>
+            <label for="second">다섯</label>
+          </section>
+          <div id="aside_first">           
+                <ul>
+                    <li><a href="#">하나</a></li>
+                    <li><a href="#">둘둘</a></li>
+                    <li><a href="#">셋셋</a></li>
+                    <li><a href="#">넷넷</a></li>
+                </ul>
+            </div>
+            <div id="aside_second" >
+                <ul>
+                    <li><a href="#">다섯</a></li>
+                    <li><a href="#">여섯</a></li>
+                    <li><a href="#">일곱</a></li>
+                    <li><a href="#">여덟</a></li>
+                </ul>
+            </div>
+        </div> 
+        </div>
+    </div>
+    <footer id="main_footer">
+        <h3>HTML + CSS3</h3>
+        <address>Website Layout</address>
+    </footer>
+</body>
+</html>

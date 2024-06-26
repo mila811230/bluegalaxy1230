@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .graph {width: 610px;
+                border: 3px solid black;}
+
+        .bar { 
+              width: 610px; height: 50px;
+              background-color: orange; 
+              margin: 5px;
+              background-color: orange;
+              transition-duration:5s;
+              /* transition-property: width */
+             transition-property: background-color,width;
+            }
+
+        
+
+        .graph:hover > .bar:nth-child(1) {width: 600px;
+                                         background-color: red;}
+        .graph:hover > .bar:nth-child(2) {width: 600px;
+                                         background-color: yellow;}
+        .graph:hover > .bar:nth-child(3) {width: 600px;
+                                         background-color: purple;}  
+        .graph:hover > .bar:nth-child(4) {width: 600px;
+                                          background-color: blue;}                           
+        .graph:hover > .bar:nth-child(5) {width: 600px;
+                                         background-color: green;}
+        .graph:hover > .bar:nth-child(6) {width: 600px;
+                                         background-color: rgb(0, 255, 255);}
+      
+    </style>
+</head>
+<body>
+    <div class="graph">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</body>
+</html>

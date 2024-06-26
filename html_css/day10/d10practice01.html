@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+            border: 10px solid #c66;
+            margin: 50px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 40px;
+        }
+        .box2{
+            width: 200px;
+            height: 100px;
+            border: 10px solid rgb(98, 253, 84);
+            margin: 50px;
+            box-sizing: border-box;
+            border-bottom-right-radius: 50px;
+        }
+        .box3{
+            width: 200px;
+            height: 100px;
+            border: 10px solid rgb(114, 6, 255);
+            margin: 50px;
+            box-sizing: border-box;
+            border-bottom-left-radius: 100px;
+        }
+        .box4{
+            width: 200px;
+            height: 100px;
+            border: 10px solid rgb(25, 117, 255);
+            margin: 50px;
+            box-sizing: border-box;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+        }
+        .box5{
+            width: 200px;
+            height: 100px;
+            border: 10px solid rgb(255, 153, 0);
+            margin: 50px;
+            box-sizing: border-box;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+        /* border-radius:100px; 이랑 위는 같음 */
+            border-radius: 50%;
+        }
+        .box5{
+            width: 100px;
+            height: 100px;
+            border: 10px solid rgb(255, 0, 0);
+            margin: 50px;
+            box-sizing: border-box;
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            border-bottom-left-radius: 100px;
+        /* border-radius:100px; 이랑 위는 같음 */
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">테두리포함안됨</div>
+    <div class="box2">border-box 테두리 포함</div>
+    <div class="box3">border-content 테두리 미포함</div>
+    <div class="box4">알약</div>
+    <div class="box5">찌그러진똥글</div>
+    <div class="box6">똥글똥글</div>
+</body>
+</html>

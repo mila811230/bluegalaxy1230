@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{text-decoration: none;}
+        #container{
+            width: 900px;
+            margin: 0 auto;
+            display: grid;
+            font-size: 14px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 200px 50px 200px 200px;
+            gap:30px;
+            
+        }
+        /*.item:hover{}*/
+        .header1{width: 300px; height: 160px;
+            grid-column: 1 / 2;
+            overflow: hidden;
+            text-decoration-line: none;       
+            }
+        .header1>p>a{
+            display: block;          /* 블록 요소로 변경하여 전체 셀을 채우도록 함 */
+            white-space: nowrap;     /* 텍스트를 한 줄로 표시 */
+            overflow: hidden;        /* 넘치는 텍스트를 숨김 */
+            text-overflow: ellipsis; /* 넘치는 텍스트를 ...으로 표시 */
+            width: 300px;             /* 링크가 셀의 너비에 맞도록 설정 */
+
+        }
+        .header2{
+            width: 300px; height: 160px;
+            grid-column: 2 / 3;
+            line-height: 130%;
+        }
+        .header3{
+            width: 300px; height: 160px;
+            grid-column: 3 / 4; background-color:}
+        .middle-middle{grid-row: 2 / 3; grid-column: 1 / 4;}
+        .middle1{image-rendering: 300px 200px;
+            grid-row: 3 / 4; grid-column: 1 / 2; background-color: rgb(255, 190, 190);
+        text-align: center;}
+        .middle2{
+            grid-column: 2 / 3; grid-row: 3 / 4; background-color: rgb(198, 255, 165);
+            text-align: center;}
+        .middle3{
+            grid-row: 3 / 4; grid-column: 3 / 4; background-color: rgb(252, 249, 114);
+            text-align: center;}
+        .bottom1{
+            grid-row: 4/ 5; background-color: rgb(194, 218, 255);
+            text-align: center;}
+        .bottom2{
+            grid-column: 2 / 3; grid-row: 4 / 5; background-color: rgb(224, 190, 255);
+            text-align: center;}
+        .bottom3{
+            grid-row: 4 / 5; grid-column: 3 / 4; background-color: rgb(255, 188, 227);
+            text-align: center;}
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="item header1">
+            <h2><u>공지사항</u></h2>
+                <p><a href="https://bdmp-003.cafe24.com/bizdemo154562/m6/sm1.php?topmenu=6&submenu=1&com_board_basic=read_form&com_board_idx=4&com_board_id=1">. 웹표준으로 제작되어 스마트폰에서도 이상없이 작동합니다.</a></p>
+                <p><a href="https://bdmp-003.cafe24.com/bizdemo154562/m6/sm1.php?topmenu=6&submenu=1&com_board_basic=read_form&com_board_idx=3&com_board_id=1">. 타 업종에서도 이용이 가능하며, 그 경우 사전에 문의 주시면 감사하겠습니다.</a></p>
+                <p><a href="https://bdmp-003.cafe24.com/bizdemo154562/m6/sm1.php?topmenu=6&submenu=1&com_board_basic=read_form&com_board_idx=2&com_board_id=1">. 펜션, 게스트하우스, 등의 업종에 적합한 디자인입니다.</a></p>
+        </div>
+        <div class="item header2">
+            <h2>고객센터</h2>
+            <p><h5>전화상담 가능시간 : 오전 09시 ~ 오후 06시</h5></p>    
+            <p><h1>070-000-0000</h1></p>
+            <p>농협 0000-0000-0000-000</p>
+        </div>
+        <div class="item header3">
+            <h2><u>고객문의</u></h2>
+            <p>. 겨울에도 바베큐 시설이 이용...</p>
+            <p>. 픽업서비스 가능하나요?</p>
+            <p>. 펜션근처에 먹을거리를 살...</p>
+
+        </div>
+        <div class="item middle-middle">
+            <h2><u>시설보기</u></h2>
+        </div>
+        <div class="item middle1">
+            <a href="https://bdmp-003.cafe24.com/bizdemo154562/m1/sm2.php?topmenu=1&submenu=2&com_board_basic=read_form&com_board_idx=16&com_board_id=2">
+            <img src="https://bdmp-003.cafe24.com/bizdemo154562/component/board/board_2/u_image/16/1416898104_74.jpg" width="300" height="200">
+            샘플사진
+            </a>
+        </div>
+        <div class="item middle2">
+            <a href="https://bdmp-003.cafe24.com/bizdemo154562/m1/sm2.php?topmenu=1&submenu=2&com_board_basic=read_form&com_board_idx=15&com_board_id=2">
+            <img src="https://bdmp-003.cafe24.com/bizdemo154562/component/board/board_2/u_image/15/1416898053_29.jpg" alt="" width="300" height="200">
+            샘플사진
+            </a>
+        </div>
+        <div class="item middle3">
+            <a href="https://bdmp-003.cafe24.com/bizdemo154562/m1/sm2.php?topmenu=1&submenu=2&com_board_basic=read_form&com_board_idx=10&com_board_id=2">
+                <img src="https://bdmp-003.cafe24.com/bizdemo154562/component/board/board_2/u_image/10/1416897977_41.jpg" alt="" width="300" height="200">
+                샘플사진
+            </a>
+        </div>
+        <div class="item bottom1">
+            <a href="https://bdmp-003.cafe24.com/bizdemo154562/m1/sm2.php?topmenu=1&submenu=2&com_board_basic=read_form&com_board_idx=9&com_board_id=2">
+                <img src="https://bdmp-003.cafe24.com/bizdemo154562/component/board/board_2/u_image/9/1416897961_85.jpg" alt="" width="300" height="200">
+                시설보기..
+            </a>
+        </div>
+        <div class="item bottom2">
+            <a href="https://bdmp-003.cafe24.com/bizdemo154562/m1/sm2.php?topmenu=1&submenu=2&com_board_basic=read_form&com_board_idx=8&com_board_id=2">
+                <img src="https://bdmp-003.cafe24.com/bizdemo154562/component/board/board_2/u_image/8/1416897927_75.jpg" alt="" width="300" height="200">
+                부대시설..
+            </a>
+        </div>
+        <div class="item bottom3">
+            <a href="https://bdmp-003.cafe24.com/bizdemo154562/m1/sm2.php?topmenu=1&submenu=2&com_board_basic=read_form&com_board_idx=7&com_board_id=2">
+                <img src="https://bdmp-003.cafe24.com/bizdemo154562/component/board/board_2/u_image/7/1416897910_30.jpg" alt="" width="300" height="200">
+                샘플사진
+            </a>
+        </div>
+    </div>
+    <!-- 1번이미지 https://bdmp-003.cafe24.com/bizdemo154562/component/board/board_2/u_image/16/1416898104_74.jpg -->
+    <!-- 2번이미지 https://bdmp-003.cafe24.com/bizdemo154562/component/board/board_2/u_image/15/1416898053_29.jpg -->
+    <!-- 3번이미지 https://bdmp-003.cafe24.com/bizdemo154562/component/board/board_2/u_image/10/1416897977_41.jpg -->
+    <!-- 4번이미지 https://bdmp-003.cafe24.com/bizdemo154562/component/board/board_2/u_image/9/1416897961_85.jpg -->
+    <!-- 5번이미지 https://bdmp-003.cafe24.com/bizdemo154562/component/board/board_2/u_image/8/1416897927_75.jpg -->
+    <!-- 6번이미지 https://bdmp-003.cafe24.com/bizdemo154562/component/board/board_2/u_image/7/1416897910_30.jpg -->
+    </body>
+</html>
