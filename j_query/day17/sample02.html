@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/jquery.js"></script>
+  <script>
+
+  </script>
+</head>
+<body>
+  <button type="button">sample</button>
+  <div></div>
+  <p></p>
+  <script>
+    $(function(){
+      $("div").text('제이쿼리 시작하기');
+      $("button").click(function(e){
+        $("p").text('Welcom').css({'color':'red','background-color':'blue'});
+      })
+    });
+  </script>
+</body>
+</html>

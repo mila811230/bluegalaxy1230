@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'd2coding';
+            /* white-space: pre; 연속된 공백과 줄바꿈을 그대로 표시 */
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // function addNum(num1, num2){
+        //     let sum = num1 + num2;
+        //     return sum;
+        // }
+        // let sum1 = addNum(1, 2);
+        // document.write(sum1,"<br>");
+        // document.write(addNum(3, 4),"<br>");
+
+
+        // function writeSum(num1, num2){
+        //     document.write(num1 + num2);
+        // }
+        // writeSum(3, 4)
+
+        // for(let dan = 2; dan <10, dan++){      //for문
+        //     for(let n = 2; n <10, n++){
+        //         document.write(dan,"*", n, "=", dan+n, "<br>");
+        //     }
+        // }
+
+        // function displayDan( dan ){      //구구단------------
+        //     for(let n = 2;, n < 10; n++){
+        //         document.write(dan,"*", n, "=", dan+n, "<br>");
+        //     }
+        // }
+
+        // for(let dan=2; dan<10;dan++){
+        //     displayDan(dan);
+        // }
+        // ---------------------------------------------------
+
+         // //     *
+        // //    **
+        // //   ***
+        // //  ****
+        // // *****--------------------------아래는 요거 만들기 식
+
+        // function writeBlank(count){
+        //     for(let i = 0; i < count; i++){
+        //         document.write("&nbsp;");
+        //     }
+        // }
+        // function writeStar(count){
+        //     for(let i = 0; i < count; i++){
+        //         document.write("*");
+        //     }
+        // }
+
+        // for(let n = 4, s = 1; n <= 0 && s < 6; n--, s++){
+        //     writeBlank(n); writeStar(s); document.write("<br>")
+        // }
+       
+        // writeBlank(4); writeStar(1); document.write("<br>");
+        // writeBlank(3); writeStar(2); document.write("<br>");
+        // writeBlank(2); writeStar(3); document.write("<br>");
+        // writeBlank(1); writeStar(4); document.write("<br>");
+        // writeBlank(0); writeStar(5); document.write("<br>");
+
+        // for(let n=5, s=1; n>=0 & s<6; n--,s++){    //풍차 지현님---
+        //     writeBlank (s); writeStar (n);
+        //     writeBlank (n); writeStar (s);
+        //     document.write("<br>");
+        // }
+        // for(let n=5, s=1; n>=0 & s<6; n--,s++){
+        //      writeStar (n); writeBlank (s);
+        //      writeStar (s); writeBlank (n);
+        //     document.write("<br>");
+        // }  ----------------------------------------------------------
+
+        //풍차 윤지님--------------------------------------------------
+        // function writeBlank(count) {
+        //     for (let i = 0; i < count; i++) {
+        //         document.write("&nbsp;");
+        //     }
+        // }
+
+        // function writeStar(count) {
+        //     for (let i = 0; i < count; i++) {
+        //         document.write("*");
+        //     }
+        // }
+
+        
+        // for (let n = 4, s = 1; n > 0 & s < 6; n--, s++) {
+        //     writeBlank(s);
+        //     writeStar(n);
+        //     // document.write("<br>");
+
+        //     writeBlank(n);
+        //     writeStar(s);
+        //     document.write("<br>");
+        // }
+
+        // for (let n = 4, s = 1; n > 0 & s < 6; n--, s++) {
+        //     writeStar(n);
+        //     writeBlank(s);
+        //     // document.write("<br>");
+
+        //     writeStar(s);
+        //     writeBlank(n);
+        //     document.write("<br>");
+        // }---------------------------------------------------------------
+
+ 
+    //    function line(){
+    //     for(i = 1; i <=20; i++){
+    //         document.write('*');
+    //     }
+    //     document.write('end<br>');
+    //    }
+
+    //    line();
+    //    line();
+    //    line();
+
+    //    function line(str){
+    //     for(i = 1; i <=20; i++){
+    //         document.write(str);
+    //     }
+    //     document.write('end<br>');
+    //    }
+
+    //    line('*');
+    //    line('&');
+    //    line('%');
+
+
+        // function add(num1, num2){
+        //     let sum = num1 + num2;
+        //     document.write(sum + "<br>");
+        // }
+        // add(2, 3);
+        // add(45, 3463);
+        // add(123456, 876543);
+
+        // function gift(sport){
+        //     switch(sport){
+        //         case "축구":
+        //         alert("박지성 사인볼에 당첨되셨습니다.");
+        //         case "야구":
+        //         alert("류현진 사인볼에 당첨되셨습니다.");
+        //         case "농구":
+        //         alert("마이클조던 사인 티셔츠에 당첨되셨습니다.");
+        //         default :
+        //         alert("꽝");
+        //     }
+        // }
+
+        // function flower(flowerNum){
+        //     switch(flowerNum){
+        //         case '무궁화': alert('무궁화 동호회를 추천합니다');
+        //         break;
+        //         case '장미': alert('장미 동호회를 추천합니다');
+        //         break;
+        //         case '국화': alert('국화 동호회를 추천합니다');
+        //         break;
+        //     }
+        // }
+
+        // var first = 13;
+        // var last = 7;
+        // var result = all(first, last);
+        //     document.write(result);
+
+        //     function all(a, b){
+        //         var sam = a + b;
+        //         return sam;
+        //     }        
+
+        // function love(){
+        //     str = '산';
+        //     var sum = '강';
+        //     document.write('함수내에서 출력:', str, '<br>');
+        //     document.write('함수내에서 출력:', sum, '<br>');
+        //     return str; 
+        // }
+        // love();
+        // document.write(str, '<br>');
+
+        // function all(a, b){
+        //     let result;
+        //     result = a>b ? console.log('a>b') :console.log('a<b');
+        //     return result;
+        // }
+
+        // let first = 13;
+        // let last = 7;
+
+        // all(first, last);
+        // all(23, 45);
+        // all(1/2, 3/4);
+
+        // -----아래와 같은 식임---
+        // function maxFunc(a,b){   
+        //     let resilt = a>b? a:b;
+        //     return;
+        // }
+
+        // const max = (a,b)=> a>b? a:b;
+        // document.write(max(15,6));   
+
+
+    </script>
+
+       <button type="button" onclick="gift('축구')">축구</button>
+      <button type="button" onclick="gift('야구')">야구</button>
+      <button type="button" onclick="gift('농구')">농구</button>
+
+      <button type="button" onclick="flower('무궁화')">무궁화</button>
+      <button type="button" onclick="flower('장미')">장미</button>
+      <button type="button" onclick="flower('국화')">국화</button>  
+</body>
+</html>

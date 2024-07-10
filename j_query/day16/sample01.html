@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM</title>
+    <style media="screen">
+      .cta {
+          padding: 3em;
+          background: #D2D434;
+          text-align: center;
+      }
+      .cta a {
+          padding: 0 .5em;
+          font-size: 2em;
+          font-weight: 900;
+          color: #615206;
+          text-decoration: none;
+          border: 5px solid #837325;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="cta">
+    <a href="#">DOM TEST</a>
+  </div>
+  <script>
+    // 05 DOM속성 변경하기
+    const CTA = document.querySelector(".cta>a"); //a(DOM TEST 요소 찾아)
+
+    if(CTA.hasAttribute("target")){  //a(DOM TEST)태그에 target속성이 있으면
+      let strTemp = CTA.getAttribute("target"); //target 속상값을 읽고
+      alert(strTemp);                           //메세지 차으로 보여주기
+    }else{
+      CTA.getAttribute("target", "_blank");   //target속성이 없으면 새창 열기로 설정
+    } 
+    if(CTA.hasAttribute("href")){         //href 속성이 있으면
+      let strTemp = CTA.getAttribute("herf");   // 속성값을 읽어서
+      alert(strTemp);                            //메세지 창으로 보여주기
+        CTA.setAttribute("herf", "https://www.naver.com");  //herf 값을 새로 지정하기
+      }else {
+        alert("이동할 페이지가 없습니다");
+        CTA.setAttribute("herf", "https://www.daum.net");  //href값을 새로 지정하기
+            }
+  </script>
+  </body>
+</html>

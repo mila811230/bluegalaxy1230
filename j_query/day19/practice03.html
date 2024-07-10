@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./images0704/js/jquery.min.js"></script>
+  <style>
+    div{
+      position: relative;
+      width: 800px;
+      height: 700px;
+      background-color: rgb(140, 196, 140);
+    }
+    p{
+      position: absolute;
+      left: 100px;
+      top: 100px;
+      width: 50px;
+      height: 50px;
+      background: #ca94fd;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p></p>
+  </div>
+  <script>
+    $(function(){
+      $('p').on('click',
+        function(e){
+          let num01 = Math.round(Math.random()*450)
+          let num02 = Math.round(Math.random()*250)
+          $('p').animate({left:num01, top:num02}, 'slow')
+        }
+      )
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    function logScope(){
+    //         let local = 2;
+    //         if(local){
+    //             let local = '다른값';
+    //             console.log('블럭안의 var:',local);
+    //         }
+    //         console.log('local', local);
+    //     }
+    //     logScope();
+
+    // let num = -3.14159265359;
+    // let str = 'welcome';
+    // let bloom = true;
+    // let no = null;
+    // let some;
+
+    // document.write(typeof num);
+    // document.write(typeof str);
+    // document.write(typeof bloom);
+    // document.write(typeof no);
+    // document.write(typeof soma);
+
+    // let hn01 = '<h1>welcome</h1>';
+
+    // document.write(hn01);
+
+    // let str01 = '지리산';
+    // let str02 = '<p class="main">문자 데이터</p>';
+
+    // document.write(str01);
+    // document.write(str02);
+    // let sum01 = 345;
+    // let num = '456';
+    // let sum02 = Number('500');
+    // document.write(sum01+sum02);
+    // let sum03 = parseInt('500');
+    // document.write(sum02+sum03);
+    // let sam01 = 20 > 10;
+    // let sam02 = true;
+    // let sam03 = false;
+
+    // document.write(sam01,sam02, sam03);
+
+    // let sam04 = Boolean(0);
+    // let sam05 = Boolean(null);
+    // let sam06 = Boolean(undefined);
+    // let sam07 = Boolean('welcome');
+    // document.write(sam04, sam05, sam06, sam07);
+
+    // let num;
+    // document.write(num);
+    // let some = 234;
+    // document.write(some);
+    // some = null; //값을 비우는 과정
+    // document.write(some);
+
+    // let num01 = 10;
+    // let num02 = 20;
+    // let num03 = 3;
+
+    // document.write(num01+num02,'<br>');
+    // document.write(num01-num02,'<br>');
+    // document.write(num01*num02,'<br>');
+    // document.write(num02/num03,'<br>');  //나눈값이 출력
+    // document.write(num01%num03,'<br>');  //나눈 값의 나머지 값이 출력
+    
+    // let sum01 = 10;
+    // sum01 += 20;
+    // document.write(sum01);
+    // let str = '<ul>';
+    //     str += '<li> num01 </li>';
+    //     str += '<li> num02 </li>';
+    //     str += '<li> num03 </li>';
+    //     str += '<li> num04 </li>';
+    //     str += '</ul>';
+    //     document.write(str);
+    // <ul> <li>num01</li><li>num02</li><li>num03</li><li>num04</li></ul>
+
+    // let a = 1;
+    // let b = 1;
+
+    // document.write(a++, '<br>'); 
+    // document.write(a++, '<br>'); 
+    // document.write(++b, '<br>'); 
+    // document.write(++b, '<br>'); 
+    // document.write(b, '<br>'); 
+
+    // let num01 = 5;
+    // let num02 = 6;
+    // let d = `문항의 답은 ${num01 + num02}입니다`;
+
+    // document.write(d);
+
+    // let a = 20;
+    // let b = 10;
+    // let c = '10';
+
+    // document.write('a가 b보다 크다', a > b, '<br>');
+    // document.write('b가 a보다 작다', b < a,'<br>');
+    // document.write('b가 c와 같다', b == c, '<br>');
+    // document.write('b하고 c가 정말로 같다', b === c, '<br>');
+    // document.write('b하고 c가 정말로 다르다', b !== c, '<br>');
+
+    // && and연산자는 연산자 양옆의 두 상황이 모두 true일때 true값을 내어 통과시키고자 할때 사용된다
+    //|| or 연산자는 연산자 양옆의 두 상황 모두 false인 경우에 false상황을 만든다.
+    //! not연산자는 true와 false상황을 반대로 만든다.
+    // let ID = 'main';
+    // let PW = 'a0123';
+
+    // let userId = 'main';
+    // let userPw = 'a0123';
+
+    // let result =(ID === userId) && (PW === userPw);
+    // document.write(result);
+
+    // let ID = 'main';
+    // let PW = 'a0123';
+
+    // let userId = prompt('아이디다');
+    // let userPw = prompt('패스워드다');
+
+    // let result = (ID===userId) && (PW===userPw); 
+    // document.write(result);
+
+        // let classA = prompt('A과목 점수');
+        // let classB = prompt('B과목 점수');
+
+        // let result = (classA >= 70) || (classB >= 70);
+        // document.write('합격여부는?', result);69
+
+        // let a = 'apple';
+        // let b = 'banana';
+
+        // let c = ('apple' || 'banana'); 
+        // let d = ('apple' && 'banana');
+
+        // document.write(c, '<br>');
+        // document.write(d);
+
+        // document.write(true && 'dog', '<br>'); 
+        // document.write('cat' && 'dog', '<br>');
+        // document.write(false && 'cat', '<br>');
+        // document.write(false && 'dog', '<br>');
+        // document.write(true || 'dog', '<br>');
+        // document.write('dog' || true, '<br>');
+        // document.write(false || 'dog', '<br>');
+        // document.write('dog' || true, '<br>');
+        // document.write(false || true, '<br>');
+        // document.write(true || false, '<br>');
+
+    //  let i = 30;
+    //  let j = 15;
+    //  let c = (i < j) ? 'i가j보다 작다' : 'i가 j보다 크다';
+    //  document.write(c);
+
+    // let num = 5;
+    // let sum = 15;
+
+    // let result = ++num <= sum*5;
+    // document.write(result);
+
+    let a = 10;
+    let b = 11;
+    document.write(`a의 값은 ${a}이고 b의 값은 ${b}이고 a+b의 값은 ${a+b}입니다`)
+
+    </script>
+   
+</body>
+</html>

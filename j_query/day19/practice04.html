@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./images0704/js/jquery.min.js"></script>
+  <style>
+    *{
+      background-color: rgb(191, 255, 183);
+    }
+    #top{
+      position: fixed;
+      width: 100px;
+      height: 25px;
+      right: 50px;
+      bottom: 100px;
+      background-color: #29ff34;
+      padding: 3px;
+      color: rgb(229, 255, 0);
+      border-radius: 20%;
+    }
+    #sec{
+      width: 100px;
+      height: 25px;
+      position: fixed;
+      top: 10px;
+      background-color: blueviolet;
+      color: aquamarine;
+      border-radius: 20%;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <button id="sec" type="text">move to main</button>
+    <button id="top" type="text"><a href="#"></a>move to top</button>
+    <section id="box01">box01</section>
+    <section id="box02">box02</section>
+    <section id="box03">box03</section>
+    <section id="box04">box04</section>
+  </div>
+  <script>
+    $(function(){
+      let wHeight = $(window).height()
+      $('section').height(wHeight)
+      $('#sec').on('click',
+        function(e){
+          let posT = $('#box03').offset().top
+          $('body, html').animate({scrollTop:posT})
+        }
+      )
+      $('#top').on('click',
+        function(e){
+          $('#top').on('click',
+            function(e){
+              $('body, html').animate({scrollTop:'0'})
+            }
+          )
+        }
+      )
+    })
+  </script>
+</body>
+</html>

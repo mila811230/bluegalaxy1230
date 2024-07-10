@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/jquery.js"></script>
+</head>
+<body>
+  <button id="btn01">button</button>
+  <div id="container">
+    <p>안녕하셨어요</p>
+  </div>
+
+  <script>
+    //버튼 클릭시 p요소 아래에 p요소를 이용하여 새 텍스트 불러오기
+      // $('#btn01').click(function(){
+      //   // $('#container>p').after('<p>반갑습니다</p>')
+      //   $('#container>p').append('<p>반갑습니다</p>')
+      // })
+      
+      // // 버튼 클릭스 p요소 앞에 p요소를 이용하여 새 텍스트 불러오기
+      $('#btn01').click(function(){
+        // $('#container>p').before('<p>오랜만입니다</p>')
+        $('#container>p').prepend('<p>오랜만입니다</p>')
+      })
+  </script>
+</body>
+</html>

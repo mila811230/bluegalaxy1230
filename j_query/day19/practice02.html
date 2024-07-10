@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./images0704/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css_1.css">
+  <style>
+    dd{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <dl>
+    <dt><h1>Title1</h1></dt>
+    <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora consequatur ipsam nam earum vitae reprehenderit pariatur, fugit eos. Necessitatibus quam cumque reiciendis sint! Veritatis excepturi vitae sequi inventore modi magni?</dd>
+    <dt><h1>Title2</h1></dt>
+    <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora consequatur ipsam nam earum vitae reprehenderit pariatur, fugit eos. Necessitatibus quam cumque reiciendis sint! Veritatis excepturi vitae sequi inventore modi magni?</dd>
+    <dt><h1>Title2</h1></dt>
+    <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora consequatur ipsam nam earum vitae reprehenderit pariatur, fugit eos. Necessitatibus quam cumque reiciendis sint! Veritatis excepturi vitae sequi inventore modi magni?</dd>
+  </dl>
+  <script>
+    $(function(){
+      $('dl>dt').on('click',
+        function(e){
+          let displaySrc = $(this).next('dd').css('display')
+          if(displaySrc == 'none'){
+            $('dl>dd').slideUp(300)
+            $(this).next('dd').slideDown(300)
+          } else{
+            $('dl>dd').slideUp(300)
+          }
+
+        }
+      )
+    })
+  </script>
+</body>
+</html>

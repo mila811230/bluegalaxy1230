@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./js/jquery.js"></script>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    ul>li{
+      list-style: none;
+    }
+    #box{
+      width: 770px;
+      margin: 30px auto;
+      background-color: gray;
+      padding: 10px;
+    }
+    ul>{
+      overflow: hidden;
+      margin-bottom: 50px;}
+      
+    li{  
+      float: left;
+      margin: 0px 10px;
+      padding: 10px;
+      /* border: 1px solid white; */
+      background-color: rgb(161, 202, 151);
+    }
+    
+    p{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    button{
+      background-color: rgb(91, 124, 113);
+      width: 180px;
+      font-size: 2em;
+      font-weight: bolder;
+      color: white;
+      margin-top: 25px;
+    }
+    button:hover {
+      color: pink;
+      background-color: rgb(157, 216, 255);
+    }
+
+  </style>
+</head>
+<body>
+  <div id="box">
+    <ul>
+      <li><img src="./images0702/pic1.jpg" alt="이미지1"></li>
+      <li><img src="./images0702/pic2.jpg" alt="이미지2"></li>
+      <li><img src="./images0702/pic3.jpg" alt="이미지3"></li>
+      <li><img src="./images0702/pic4.jpg" alt="이미지4"></li>
+    </ul>
+    <p>
+      <button id="left"> <<< </button>
+      <button id="right"> >>> </button>
+    </p>
+  </div>
+ 
+  <script>
+    $(function(){
+      $('#left').click(
+        function(){
+            $('ul>li:first-child').appendTo('ul')
+        }
+      )
+    $('#right').click(
+      function(){
+          $('ul>li:last-child').prependTo('ul')
+
+        
+      }
+    )
+    })
+  </script>
+</body>
+</html>
