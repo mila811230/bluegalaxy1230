@@ -1,0 +1,184 @@
+<script>
+  // const yunYear = function (year) {
+    
+  //   return (year % 4 === 0) 
+  //     && (year % 100 !== 0)
+  //     || (year % 400 === 0)
+  // }
+
+  // document.write(`2024 ${yunYear(2024)}`)
+  // document.write(`2024 ${yunYear(2000)}`)
+  // document.write(`2024 ${yunYear(1978)}`)
+
+
+// const sum = function (a, b) {
+//   let output = 0
+//   for (let i = a; i <= b; i++){
+//     output += i
+//   }
+//   return output
+// }
+
+// document.write(sum(1, 100))
+
+// const  함수 = function (매개변수){
+//   let out = 초깃값
+//   return output
+// }
+// 함수(매개변수)
+
+// const gop = function (c, d) {
+//   let output = 1
+//   for (let j = c; j <= d; j++) {
+//     output *= j  
+//   }
+//   return output
+// }
+
+// document.write(gop(1, 10))
+
+
+// const min = function (array) {
+// let output = array[0]
+// for (const value of array){
+//   if (output > value){
+//      output = value 
+//   }
+// }
+// return output
+// }
+
+// document.write (min([52,87,511,12,4]))
+
+// const sam = function(a, b, ...items) {
+//   console.log(items)
+// }
+
+// sam(1, 2)
+// sam(1, 2, 3)
+// sam(1, 2, 4, 5)
+// sam(1, 2, 3, 4, 5, 6)
+
+// const min = function (...items){
+//   let output = items[0]
+//   for (const item of items) {
+//     if (output > item){
+//       output = item
+//     }
+//   }
+//   return output
+// }
+// document.write(min(5, 45, 41, 81, 9, 52))
+
+// const samp = function(a, b, ...c){
+//   console.log(a, b, c)
+// }
+
+// samp(1, 2, 3)
+// samp(1, 2, 3, 4, 5)
+// samp(1, 2, 3, 4, 5, 6, 7)
+// samp(1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+// const min  = function(a, ...f){
+//   let output 
+//   let items 
+//   if (Array.isArray(a)) {
+//     output = a[0]
+//     items = a
+//   } else if (typeof(a) ==='number'){
+//     output = a
+//     items = f
+//   }
+//   for (const item of items) {
+//    if (output > item){
+//     output = item
+//        }
+//     }
+//     return output
+//   }
+
+//   document.write(min(5, 45, 41, 81, 9, 52))
+
+// const samp = function (...items){
+//   console.log(items)
+// }
+// const ary =[8, 7, 5, 4, 3]
+// samp(ary)
+// samp(... ary)
+
+// const earnungs = function (name, wage = 9680, hours = 40){
+//   document.write(`${name}님의 급여정보 <br>`)
+//   document.write(`- 시급 : ${wage}원 <br>`)
+//   document.write(`- 근무시간 : ${hours}시간 <br>`)
+//   document.write(`- 급여 : ${wage * hours}원 <br>`)
+// }
+// earnungs('구름')
+// earnungs('별', 10000, 52)
+// earnungs('달', 12500, 48)
+
+// const yunYear = function (year = newDate().getFullYear()){
+//  console.log(`매개변수 year : ${year}`)
+//   return (year % 4 === 0)
+//   && (year % 100 !== 0)
+//   || (year % 400 === 0)
+// }
+
+// document.write(`올해는 윤년? === ${yunYear(2024)}`)
+
+// const sam = function(a, b){
+//   let output = 1
+//   for (let i = a; i <= b; i++){
+//     output *= i
+//   }
+//   return output
+// }
+// document.write(sam(1, 2),'<br>')
+// document.write(sam(1, 3))
+
+// const max = function (array){
+//   let output = array[0]
+//   for (const item of array) {
+//     if(output < item){
+//       output = item
+//     } 
+//   }
+//   return output
+// }
+
+// console.log(max([5, 6, 7, 8, 9]))
+
+const max = function (...array){
+  let output = array[0]
+    for (const item of array) {
+      if (output < item) {
+        output = item
+          }
+      }
+      return output
+    }
+    console.log(max(1, 2, 3, 4, 5))
+
+// const max = function (a, ...f){
+//   let output
+//   let items
+//   if (Array.isArray(a)) {
+//     output = a[0]
+//     items = a
+//   } else if (typeof(a) === 'number'){
+//     output = a
+//     items = f
+//   }
+//   for (const item of items) {
+//     if (output < item){
+//       output = item
+//     }
+//   }
+//   return output
+// }
+
+// console.log(`max(배열) : ${max([1, 2, 3, 4, 5])}`)
+// console.log(`max(숫자) : ${max(1, 2, 3, 4, 5)}`)
+
+
+
+</script>
